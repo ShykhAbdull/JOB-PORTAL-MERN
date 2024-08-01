@@ -37,6 +37,16 @@ const Hero = () => {
   }, [dispatch, error, loading, isAuthenticated]);
 
 
+  if (!user) {
+    return <div>
+        <h1>
+          <u style={{ textDecoration: 'underline', fontSize: 'inherit' }}>NO USER DATA AVAILABLE</u>
+        </h1>
+
+    </div>;
+  }
+
+
   return (
     <section className="hero">
 

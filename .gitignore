@@ -1,1 +1,3 @@
 fullstackfyp/backend/config/config.env
+fullstackfyp/backend/node_modules
+fullstackfyp/frontend/node_modules
