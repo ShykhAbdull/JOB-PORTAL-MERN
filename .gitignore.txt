@@ -1,1 +1,0 @@
-fullstackfyp/backend/config/config.env
