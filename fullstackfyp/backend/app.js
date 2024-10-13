@@ -12,7 +12,7 @@ import { newsLetterCron } from "./automation/newsLetterCron.js";
 
 
 const app = express();
-config({ path: "./config/config.env" });
+config({ path: "./config/.env" });
 
 app.use(
   cors({
@@ -45,5 +45,6 @@ app.use("/api/v1/application", applicationRouter);
 newsLetterCron()
 connection();
 app.use(errorMiddleware);
+
 
 export default app;

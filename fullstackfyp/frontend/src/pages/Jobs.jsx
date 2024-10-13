@@ -300,8 +300,11 @@ const Jobs = () => {
       {loading ? (
         <Spinner />
       ) : (
+
+
         <section className="jobs">
           <div className="search-tab-wrapper">
+        
             <input
               type="text"
               value={searchKeyword}
@@ -394,8 +397,11 @@ const Jobs = () => {
                         </div>
                       </div>
                     );
+
                   })}
               </div>
+
+              
             </div>
           </div>
         </section>

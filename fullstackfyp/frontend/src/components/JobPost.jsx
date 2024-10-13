@@ -386,7 +386,7 @@ const JobPost = () => {
 
   useEffect(() => {
     // CORS test
-    fetch('http://localhost:4000/api/v1/test')
+    fetch(`${import.meta.env.VITE_API_BASE_URL}/api/v1/test`)
       .then(response => response.text())
       .then(data => console.log('CORS Test:', data))
       .catch(error => console.error('CORS Test Error:', error));

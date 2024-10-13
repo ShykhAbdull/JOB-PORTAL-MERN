@@ -23,7 +23,8 @@ const Footer = () => {
           <ul>
             <li>188, New Muslim Town {"\n"}  Abu Bakar Block  Garden Town, Lahore, Punjab 54500 </li>
             <li>f20030055@orbit.edu.pk</li>
-            <li>+92 XXXXXXX </li>
+            <li>Reg #2020-GCUF-083323</li>
+            <li>+92 3057378711 </li>
           </ul>
         </div>
 
@@ -52,9 +53,9 @@ const Footer = () => {
 <div >
           <h4>Developer Credits</h4>
           <ul>
-            <li>Shaikh Abdul Rehman (Team Lead)</li>
-            <li>Noman Khalid (Contributer)</li>
-            <li> Sharoon Naeem (Contributer) </li>
+            <li>Shaikh Abdul Rehman </li>
+            <li>Nouman Khalid </li>
+            <li>Sharoon Naeem </li>
           </ul>
         </div>
 

@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { logout, clearAllUserErrors } from "../store/slices/userSlice";
 
@@ -62,7 +62,22 @@ const Hero = () => {
         <h1>
           <u style={{ textDecoration: 'underline', fontSize: 'inherit' }}>Find & apply your Job today </u>
         </h1>
-      ) : null}
+      ) :         <h1>
+          <u style={{ 
+                textDecoration: 'underline', 
+                fontSize: 'inherit', 
+                background: 'none', 
+                border: 'none', 
+                cursor: 'pointer', 
+                color: 'inherit' 
+           }} onClick={() => setShow(!show) } > 
+
+            <Link to={"/login"} style={{ textDecoration: 'none', fontSize:'inherit' , color: 'inherit' }}>
+            Login to hire or get hired 
+            </Link>
+            </u>
+
+        </h1>}
 
 
 

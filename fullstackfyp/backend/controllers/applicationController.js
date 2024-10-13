@@ -1,8 +1,11 @@
+import { raw } from "express";
 import { catchAsyncErrors } from "../middlewares/catchAsyncErrors.js";
 import ErrorHandler from "../middlewares/error.js";
 import { Application } from "../models/applicationSchema.js";
 import { Job } from "../models/jobSchema.js";
 import { v2 as cloudinary } from "cloudinary";
+
+
 
 export const postApplication = catchAsyncErrors(async (req, res, next) => {
   const { id } = req.params;
@@ -39,6 +42,10 @@ export const postApplication = catchAsyncErrors(async (req, res, next) => {
         resume.tempFilePath,
         {
           folder: "Job_Seekers_Resume",
+          resource_type : "raw",
+          access_control: [
+            { access_type: 'public' } // Ensures the file is accessible
+          ]
         }
       );
       if (!cloudinaryResponse || cloudinaryResponse.error) {
