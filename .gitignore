@@ -1,4 +1,15 @@
+# Environment files
 fullstackfyp/backend/config/.env
 fullstackfyp/frontend/.env
-fullstackfyp/backend/node_modules
-fullstackfyp/frontend/node_modules
+
+# Node modules directories
+fullstackfyp/backend/node_modules/
+fullstackfyp/frontend/node_modules/
+
+# VS Code settings
+.vscode/
+
+# Ignore custom files
+Open CMD here.txt
+README.txt
+USER LOGIN Credentials.txt
